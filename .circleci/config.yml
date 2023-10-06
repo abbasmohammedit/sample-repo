@@ -15,6 +15,10 @@ jobs:
       - run:
           name: "Build"
           command: npm run build
+      - run:
+          name: "Running the build"
+          command: npm start && timeout 2m npm stop
+
 
 workflows:
   version: 2
