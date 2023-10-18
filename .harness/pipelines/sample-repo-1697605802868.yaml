@@ -28,13 +28,12 @@ pipeline:
             steps:
               - step:
                   type: Run
-                  name: instakk
+                  name: install
                   identifier: Run_1
                   spec:
                     shell: Sh
-                    command: |-
+                    command: |
                       npm install
-                      \
               - step:
                   type: Run
                   name: build
