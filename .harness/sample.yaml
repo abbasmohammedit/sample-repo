@@ -27,16 +27,9 @@ pipeline:
                     connectorRef: account.harnessImage
                     image: node:18-alphine
                     shell: Sh
-                    command: npm install
-              - step:
-                  type: Run
-                  name: Run_2
-                  identifier: Run_2
-                  spec:
-                    connectorRef: account.harnessImage
-                    image: node:18-alphine
-                    shell: Sh
-                    command: npm run build
+                    command: |-
+                      npm install
+                      npm run build
           platform:
             os: Linux
             arch: Amd64
