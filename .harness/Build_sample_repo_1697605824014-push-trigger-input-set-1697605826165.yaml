@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_sample_repo_1697605824014-push-trigger-input-set
+  identifier: Build_sample_repo_1697605824014pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_sample_repo_1697605824014
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
